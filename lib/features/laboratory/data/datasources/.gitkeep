@@ -1,0 +1,14 @@
+/// Placeholder file — add laboratory data sources here.
+///
+/// Example:
+/// ```dart
+/// abstract interface class LaboratoryRemoteDataSource {
+///   Future<List<LabTestModel>> getTests();
+/// }
+///
+/// class LaboratoryRemoteDataSourceImpl implements LaboratoryRemoteDataSource {
+///   final Dio _dio;
+///   LaboratoryRemoteDataSourceImpl(this._dio);
+///   ...
+/// }
+/// ```

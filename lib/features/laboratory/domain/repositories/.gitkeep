@@ -1,0 +1,8 @@
+/// Placeholder file — add laboratory repository interfaces here.
+///
+/// Example:
+/// ```dart
+/// abstract interface class LaboratoryRepository {
+///   Future<Result<List<LabTest>>> getTests();
+/// }
+/// ```

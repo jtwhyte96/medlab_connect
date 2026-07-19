@@ -1,0 +1,10 @@
+/// Placeholder file — add laboratory Riverpod providers/notifiers here.
+///
+/// Example:
+/// ```dart
+/// @riverpod
+/// class LaboratoryNotifier extends _$LaboratoryNotifier {
+///   @override
+///   Future<List<LabTest>> build() => ref.read(getLabTestsUseCaseProvider).call();
+/// }
+/// ```

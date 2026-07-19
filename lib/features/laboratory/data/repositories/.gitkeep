@@ -1,0 +1,10 @@
+/// Placeholder file — add the laboratory repository implementation here.
+///
+/// Example:
+/// ```dart
+/// class LaboratoryRepositoryImpl implements LaboratoryRepository {
+///   final LaboratoryRemoteDataSource _remote;
+///   LaboratoryRepositoryImpl(this._remote);
+///   ...
+/// }
+/// ```

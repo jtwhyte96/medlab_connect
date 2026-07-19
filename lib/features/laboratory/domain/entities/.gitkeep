@@ -1,0 +1,10 @@
+/// Placeholder file — add laboratory domain entities here.
+///
+/// Example:
+/// ```dart
+/// class LabTest {
+///   final String id;
+///   final String name;
+///   ...
+/// }
+/// ```

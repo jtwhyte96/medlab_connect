@@ -1,0 +1,10 @@
+/// Placeholder file — add laboratory use cases here.
+///
+/// Example:
+/// ```dart
+/// class GetLabTestsUseCase {
+///   final LaboratoryRepository _repository;
+///   GetLabTestsUseCase(this._repository);
+///   Future<Result<List<LabTest>>> call() => _repository.getTests();
+/// }
+/// ```

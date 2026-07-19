@@ -1,0 +1,10 @@
+/// Placeholder file — add laboratory data models (DTOs) here.
+///
+/// Example:
+/// ```dart
+/// class LabTestModel {
+///   final String id;
+///   final String name;
+///   factory LabTestModel.fromJson(Map<String, dynamic> json) => ...;
+/// }
+/// ```
