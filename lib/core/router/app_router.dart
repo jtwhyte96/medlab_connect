@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../features/admin/presentation/screens/admin_home_screen.dart';
 import '../../features/auth/presentation/screens/login_screen.dart';
+import '../../features/auth/presentation/screens/doctor_login_screen.dart';
 import '../../features/auth/presentation/screens/patient_login_screen.dart';
 import '../../features/auth/presentation/screens/welcome_screen.dart';
 import '../../features/auth/presentation/screens/splash_screen.dart';
@@ -63,11 +64,16 @@ final List<RouteBase> _routes = [
   GoRoute(
     path: AppRoutes.loginDoctor,
     name: 'loginDoctor',
-    builder: (context, state) => const LoginScreen(),
+    builder: (context, state) => const DoctorLoginScreen(),
   ),
   GoRoute(
     path: AppRoutes.registerPatient,
     name: 'registerPatient',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.registerDoctor,
+    name: 'registerDoctor',
     builder: (context, state) => const LoginScreen(),
   ),
 

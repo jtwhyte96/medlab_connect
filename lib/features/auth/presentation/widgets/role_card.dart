@@ -39,10 +39,7 @@ enum _RoleButtonStyle { filled, outlined }
 ///
 /// Pressing the button navigates to [RoleCardData.route] via [GoRouter].
 class RoleCard extends StatelessWidget {
-  const RoleCard({
-    super.key,
-    required this.data,
-  });
+  const RoleCard({super.key, required this.data});
 
   final RoleCardData data;
 
@@ -70,10 +67,7 @@ class RoleCard extends StatelessWidget {
                   foregroundColor: data.iconForegroundColor,
                 ),
                 const SizedBox(width: AppSpacing.base),
-                Text(
-                  data.title,
-                  style: AppTypography.titleLarge,
-                ),
+                Text(data.title, style: AppTypography.titleLarge),
               ],
             ),
             const SizedBox(height: AppSpacing.base),
@@ -117,15 +111,8 @@ class _RoleIconAvatar extends StatelessWidget {
     return Container(
       width: 48,
       height: 48,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: backgroundColor,
-      ),
-      child: Icon(
-        icon,
-        size: AppSpacing.iconBase,
-        color: foregroundColor,
-      ),
+      decoration: BoxDecoration(shape: BoxShape.circle, color: backgroundColor),
+      child: Icon(icon, size: AppSpacing.iconBase, color: foregroundColor),
     );
   }
 }
@@ -153,13 +140,11 @@ class _RoleCTAButton extends StatelessWidget {
       ),
     );
 
-    final shape = RoundedRectangleBorder(
-      borderRadius: AppRadius.circularFull,
-    );
+    final shape = RoundedRectangleBorder(borderRadius: AppRadius.circularFull);
 
     if (style == _RoleButtonStyle.filled) {
       return FilledButton(
-        onPressed: () => context.go(route),
+        onPressed: () => context.push(route),
         style: FilledButton.styleFrom(
           backgroundColor: AppColors.primary,
           minimumSize: const Size.fromHeight(AppSpacing.buttonHeight),
@@ -170,7 +155,7 @@ class _RoleCTAButton extends StatelessWidget {
     }
 
     return OutlinedButton(
-      onPressed: () => context.go(route),
+      onPressed: () => context.push(route),
       style: OutlinedButton.styleFrom(
         foregroundColor: AppColors.primary,
         side: BorderSide(color: AppColors.primary),

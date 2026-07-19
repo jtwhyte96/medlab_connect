@@ -119,9 +119,7 @@ class _FooterSection extends StatelessWidget {
           },
           child: Text(
             'Learn More',
-            style: AppTypography.labelLarge.copyWith(
-              color: AppColors.primary,
-            ),
+            style: AppTypography.labelLarge.copyWith(color: AppColors.primary),
           ),
         ),
         const SizedBox(height: AppSpacing.xs),

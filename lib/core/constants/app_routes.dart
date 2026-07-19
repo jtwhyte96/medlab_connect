@@ -12,6 +12,7 @@ abstract final class AppRoutes {
   static const String loginDoctor = '/login/doctor';
   static const String register = '/auth/register';
   static const String registerPatient = '/register/patient';
+  static const String registerDoctor = '/register/doctor';
   static const String forgotPassword = '/auth/forgot-password';
   static const String resetPassword = '/auth/reset-password';
   static const String verifyOtp = '/auth/verify-otp';
