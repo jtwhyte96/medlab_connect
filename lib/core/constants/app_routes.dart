@@ -52,4 +52,15 @@ abstract final class AppRoutes {
   static const String notifications = '/notifications';
   static const String settings = '/settings';
   static const String error = '/error';
+
+  // ── Patient Dashboard Shortcuts ──────────────────────────────────────────
+  static const String profilePatient = '/profile/patient';
+  static const String search = '/search';
+  static const String bookTest = '/book-test';
+  static const String laboratories = '/laboratories';
+  static const String results = '/results';
+  static const String appointments = '/appointments';
+  static const String appointmentDetails = '/appointments/details';
+  static const String resultDetails = '/results/details';
+  static const String laboratoryDetails = '/laboratory/details';
 }

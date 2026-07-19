@@ -10,6 +10,7 @@ import '../../features/auth/presentation/screens/welcome_screen.dart';
 import '../../features/auth/presentation/screens/splash_screen.dart';
 import '../../features/doctor/presentation/screens/doctor_home_screen.dart';
 import '../../features/laboratory/presentation/screens/laboratory_home_screen.dart';
+import '../../features/patient/presentation/screens/patient_dashboard_screen.dart';
 import '../../features/patient/presentation/screens/patient_home_screen.dart';
 import '../../shared/widgets/error_screen.dart';
 import '../constants/constants.dart';
@@ -81,7 +82,52 @@ final List<RouteBase> _routes = [
   GoRoute(
     path: AppRoutes.patientHome,
     name: 'patientHome',
-    builder: (context, state) => const PatientHomeScreen(),
+    builder: (context, state) => const PatientDashboardScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.profilePatient,
+    name: 'profilePatient',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.search,
+    name: 'search',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.bookTest,
+    name: 'bookTest',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.laboratories,
+    name: 'laboratories',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.results,
+    name: 'results',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.appointments,
+    name: 'appointments',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.appointmentDetails,
+    name: 'appointmentDetails',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.resultDetails,
+    name: 'resultDetails',
+    builder: (context, state) => const LoginScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.laboratoryDetails,
+    name: 'laboratoryDetails',
+    builder: (context, state) => const LoginScreen(),
   ),
 
   // ── Doctor shell ───────────────────────────────────────────────────────────
