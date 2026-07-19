@@ -63,4 +63,5 @@ abstract final class AppRoutes {
   static const String appointmentDetails = '/appointments/details';
   static const String resultDetails = '/results/details';
   static const String laboratoryDetails = '/laboratory/details';
+  static const String booking = '/booking';
 }

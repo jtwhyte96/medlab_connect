@@ -11,6 +11,7 @@ import '../../features/auth/presentation/screens/splash_screen.dart';
 import '../../features/doctor/presentation/screens/doctor_home_screen.dart';
 import '../../features/laboratory/presentation/screens/laboratory_home_screen.dart';
 import '../../features/patient/presentation/screens/patient_dashboard_screen.dart';
+import '../../features/patient/presentation/screens/search_laboratories_screen.dart';
 import '../../features/patient/presentation/screens/patient_home_screen.dart';
 import '../../shared/widgets/error_screen.dart';
 import '../constants/constants.dart';
@@ -92,6 +93,11 @@ final List<RouteBase> _routes = [
   GoRoute(
     path: AppRoutes.search,
     name: 'search',
+    builder: (context, state) => const SearchLaboratoriesScreen(),
+  ),
+  GoRoute(
+    path: AppRoutes.booking,
+    name: 'booking',
     builder: (context, state) => const LoginScreen(),
   ),
   GoRoute(
